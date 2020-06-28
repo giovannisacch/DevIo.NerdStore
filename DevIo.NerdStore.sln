@@ -24,7 +24,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{737A2767
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dev.Io.NerdStore.Catalogo.Domain.Tests", "tests\Dev.Io.NerdStore.Catalogo.Domain.Tests\Dev.Io.NerdStore.Catalogo.Domain.Tests.csproj", "{8D0BEAF7-68E7-478D-A77F-BE45B317DE42}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevIo.NerdStore.Data", "src\DevIo.NerdStore.Data\DevIo.NerdStore.Data.csproj", "{65D1639E-5772-467B-B301-F79E167D514D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevIo.NerdStore.Catalogo.Data", "src\DevIo.NerdStore.Catalogo.Data\DevIo.NerdStore.Catalogo.Data.csproj", "{65D1639E-5772-467B-B301-F79E167D514D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevIo.NerdStore.Catalogo.Application", "src\DevIo.NerdStore.Catalogo.Application\DevIo.NerdStore.Catalogo.Application.csproj", "{4B60899A-3630-4A9D-B7BE-A9F5D8E84AF7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,6 +45,7 @@ Global
 		{737A2767-42F7-4A8E-A57B-166C1453C313} = {9071A861-43FB-44CA-A151-CAE9E24A478C}
 		{8D0BEAF7-68E7-478D-A77F-BE45B317DE42} = {737A2767-42F7-4A8E-A57B-166C1453C313}
 		{65D1639E-5772-467B-B301-F79E167D514D} = {9071A861-43FB-44CA-A151-CAE9E24A478C}
+		{4B60899A-3630-4A9D-B7BE-A9F5D8E84AF7} = {9071A861-43FB-44CA-A151-CAE9E24A478C}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{1975AA2F-C8FE-4287-9347-72A43B4EC93D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -61,5 +64,9 @@ Global
 		{65D1639E-5772-467B-B301-F79E167D514D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{65D1639E-5772-467B-B301-F79E167D514D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{65D1639E-5772-467B-B301-F79E167D514D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B60899A-3630-4A9D-B7BE-A9F5D8E84AF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B60899A-3630-4A9D-B7BE-A9F5D8E84AF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B60899A-3630-4A9D-B7BE-A9F5D8E84AF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B60899A-3630-4A9D-B7BE-A9F5D8E84AF7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
