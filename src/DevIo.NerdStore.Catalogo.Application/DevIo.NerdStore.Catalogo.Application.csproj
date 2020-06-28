@@ -4,4 +4,17 @@
         <TargetFramework>netcoreapp3.1</TargetFramework>
     </PropertyGroup>
 
+    <ItemGroup>
+      <Compile Remove="Class1.cs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="AutoMapper" Version="9.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\DevIo.NerdStore.Catalogo.Domain\DevIo.NerdStore.Catalogo.Domain.csproj" />
+      <ProjectReference Include="..\DevIo.NerdStore.Core\DevIo.NerdStore.Core.csproj" />
+    </ItemGroup>
+
 </Project>
