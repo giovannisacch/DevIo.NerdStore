@@ -8,4 +8,8 @@
       <Compile Remove="Class1.cs" />
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="MediatR" Version="8.0.1" />
+    </ItemGroup>
+
 </Project>
