@@ -33,7 +33,11 @@ namespace DevIo.NerdStore.Catalogo.Domain
             Dimensoes = dimensoes;
             Validar();
         }
-        
+
+        protected Produto()
+        {
+            
+        }
         //AdHoc Setters
         public void Ativar() => Ativo = true;
         public void Desativar() => Ativo = false;

@@ -12,7 +12,6 @@ namespace DevIo.NerdStore.Data
         public CatalogoContext(DbContextOptions<CatalogoContext> options
         ) : base(options)
         {
-            
         }
 
         public DbSet<Produto> Produtos { get; set; }
