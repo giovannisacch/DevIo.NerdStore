@@ -4,6 +4,8 @@ using DevIo.NerdStore.Catalogo.Domain.events;
 using DevIo.NerdStore.Core.Mediatr;
 using DevIo.NerdStore.Data;
 using DevIo.NerdStore.Data.Repositories;
+using DevIo.NerdStore.Vendas.Application.Commands;
+using DevIo.NerdStore.Vendas.Domain;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -23,6 +25,10 @@ namespace DevIo.NerdStore.WebApp.MVC.Setup
             services.AddScoped<CatalogoContext>();
 
             services.AddScoped<INotificationHandler<ProdutoAbaixoEstoqueEvent>, ProdutoEventHandler>();
+
+            // services.AddScoped<IRequestHandler<AdicionarItemPedidoCommand, bool>, PedidoCommandHandler>();
+            
+            // services.AddScoped<IPedidoRepository, IPedidoRepository>()
         }
     }
 }

@@ -25,6 +25,7 @@
       <ProjectReference Include="..\DevIo.NerdStore.Catalogo.Data\DevIo.NerdStore.Catalogo.Data.csproj" />
       <ProjectReference Include="..\DevIo.NerdStore.Catalogo.Domain\DevIo.NerdStore.Catalogo.Domain.csproj" />
       <ProjectReference Include="..\DevIo.NerdStore.Core\DevIo.NerdStore.Core.csproj" />
+      <ProjectReference Include="..\DevIo.NerdStore.Vendas.Application\DevIo.NerdStore.Vendas.Application.csproj" />
     </ItemGroup>
 
 </Project>

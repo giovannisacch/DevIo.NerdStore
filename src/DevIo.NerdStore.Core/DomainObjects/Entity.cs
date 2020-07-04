@@ -40,6 +40,9 @@ namespace DevIo.NerdStore.Core.DomainObjects
         {
             return (GetType().GetHashCode() * 907) + Id.GetHashCode();
         }
-        
+        public virtual bool EhValido()
+        {
+            return Id != Guid.Empty;
+        }
     }
 }
