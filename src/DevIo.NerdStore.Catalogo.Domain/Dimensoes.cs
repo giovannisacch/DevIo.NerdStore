@@ -1,3 +1,4 @@
+using System;
 using DevIo.NerdStore.Core.DomainObjects;
 
 namespace DevIo.NerdStore.Catalogo.Domain

@@ -7,6 +7,9 @@
 
     <ItemGroup>
       <Compile Remove="Class1.cs" />
+      <Compile Remove="Migrations\20200629000905_initial.cs" />
+      <Compile Remove="Migrations\20200629000905_initial.Designer.cs" />
+      <Compile Remove="Migrations\CatalogoContextModelSnapshot.cs" />
     </ItemGroup>
 
     <ItemGroup>
@@ -18,6 +21,10 @@
     <ItemGroup>
       <ProjectReference Include="..\DevIo.NerdStore.Catalogo.Domain\DevIo.NerdStore.Catalogo.Domain.csproj" />
       <ProjectReference Include="..\DevIo.NerdStore.Core\DevIo.NerdStore.Core.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Migrations" />
     </ItemGroup>
 
 </Project>

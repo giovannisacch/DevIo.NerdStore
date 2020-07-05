@@ -4,14 +4,16 @@ using DevIo.NerdStore.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace DevIo.NerdStore.Data.Migrations
 {
     [DbContext(typeof(CatalogoContext))]
-    partial class CatalogoContextModelSnapshot : ModelSnapshot
+    [Migration("20200704190156_initial")]
+    partial class initial
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

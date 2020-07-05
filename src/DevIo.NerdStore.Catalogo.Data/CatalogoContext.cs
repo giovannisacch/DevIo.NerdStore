@@ -3,6 +3,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using DevIo.NerdStore.Catalogo.Domain;
 using DevIo.NerdStore.Core.Data;
+using DevIo.NerdStore.Data.Mappings;
 using Microsoft.EntityFrameworkCore;
 
 namespace DevIo.NerdStore.Data
@@ -22,9 +23,11 @@ namespace DevIo.NerdStore.Data
             foreach (var property in modelBuilder.Model.GetEntityTypes().SelectMany(
                 e => e.GetProperties().Where(p => p.ClrType == typeof(string))))
                 property.SetColumnType("varchar(100)");
-
+            
+            //pega as configuracoes das classes que estao com o DbSet
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(CatalogoContext).Assembly);
-            //Metodo acima pega as configuracoes das classes que estao com o DbSet
+
+            modelBuilder.Seed();
         }
         
         public async Task<bool> Commit()
